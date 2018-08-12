@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <!--导入属性配置 -->
+    <properties resource="generator.properties"></properties>
+    <classPathEntry location="${jdbc.driverLocation}"/>
+    <context id="context1">
+    <commentGenerator>
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="true" />
+        </commentGenerator>
+        <jdbcConnection driverClass="${jdbc.driverClass}" connectionURL="${jdbc.connectionURL}"
+            userId="${jdbc.userId}" password="${jdbc.password}"/>
+        <javaModelGenerator targetPackage="${mybatis.model}"
+            targetProject="iop-common-service/src/main/java">
+            <property name="enableSubPackages" value="false"/>
+        </javaModelGenerator>
+        <sqlMapGenerator targetPackage="${mybatis.xml}" targetProject="iop-common-service/src/main/resources">
+            <property name="enableSubPackages" value="false"/>
+        </sqlMapGenerator>
+        <javaClientGenerator targetPackage="${mybatis.mapper}"
+            targetProject="iop-common-service/src/main/java" type="XMLMAPPER">
+            <property name="enableSubPackages" value="false"/>
+        </javaClientGenerator>
+		<!-- 
+        <table tableName="laagent" domainObjectName="LaAgent">
+        </table>						
+		<table tableName="laagentproductsales" domainObjectName="LaAgentProductSales">
+        </table>
+		<table tableName="labranchgroup" domainObjectName="LaBranchGroup">
+        </table>
+		<table tableName="latree" domainObjectName="LaTree">
+        </table>
+         <table tableName="lcaddress" domainObjectName="LcAddress">
+        </table>
+		<table tableName="lcbnf" domainObjectName="LcBnf">
+        </table>
+        <table tableName="lccustomerimpart" domainObjectName="LcCustomerImpart">
+        </table>
+		<table tableName="lccuwerror" domainObjectName="LcCuwError">
+        </table>
+		<table tableName="lccuwmaster" domainObjectName="LcCuwMaster">
+        </table>
+        <table tableName="lccuwsub" domainObjectName="LcCuwSub">
+        </table>
+        <table tableName="lcinsured" domainObjectName="LcInsured">
+        </table>
+		<table tableName="lcplandutyparaminfo" domainObjectName="LcPlanDutyParamInfo">
+        </table>
+		<table tableName="lcplaninfo" domainObjectName="LcPlanInfo">
+        </table>
+         <table tableName="lcplanriskinfo" domainObjectName="LcPlanRiskInfo">
+        </table>
+        <table tableName="lcuwerror" domainObjectName="LcUwError">
+        </table>
+		<table tableName="lcuwmaster" domainObjectName="LcUwMaster">
+        </table>
+		<table tableName="lcuwsub" domainObjectName="LcUwSub">
+        </table>
+        <table tableName="ldcom" domainObjectName="LdCom">
+        </table>
+		<table tableName="ldplandutyparaminfo" domainObjectName="LdPlanDutyParamInfo">
+        </table>
+        <table tableName="ldplaninfo" domainObjectName="LdPlanInfo">
+        </table>
+		<table tableName="ldplanriskinfo" domainObjectName="LdPlanRiskInfo">
+        </table>
+		<table tableName="lmcalmode" domainObjectName="LmCalMode">
+        </table>
+         <table tableName="lmduty" domainObjectName="LmDuty">
+        </table>
+		<table tableName="lmdutyget" domainObjectName="LmDutyGet">
+        </table>
+		<table tableName="lmdutygetrela" domainObjectName="LmDutyGetRela">
+        </table>
+        <table tableName="lmdutypay" domainObjectName="LmDutyPay">
+        </table>
+		<table tableName="lmdutypayrela" domainObjectName="LmDutyPayRela">
+        </table>
+		<table tableName="lmriskapp" domainObjectName="LmRiskApp">
+        </table>
+        <table tableName="lmriskduty" domainObjectName="LmRiskDuty">
+        </table>
+		<table tableName="lmriskrela" domainObjectName="LmRiskRela">
+        </table>
+		<table tableName="lmuw" domainObjectName="LmUw">
+        </table>
+        <table tableName="tranlog" domainObjectName="TranLog">
+        </table>
+        <table tableName="laagenttoperson" domainObjectName="LaAgentToPerson">
+        </table>
+        <table tableName="ldperson" domainObjectName="LdPerson">
+        </table>
+        <table tableName="lacom" domainObjectName="LaCom">
+        </table>
+		<table tableName="lacomtoagent" domainObjectName="LaComToAgent">
+        </table>
+        <table tableName="lcpol" domainObjectName="LcPol">
+        </table>
+        
+        <table tableName="lcduty" domainObjectName="LcDuty">
+        </table>
+       	<table tableName="lcprem" domainObjectName="LcPrem">
+        </table>
+        <table tableName="lcget" domainObjectName="LcGet">
+        </table>
+        <table tableName="lccont" domainObjectName="LcCont">
+        </table>
+        <table tableName="payment" domainObjectName="Payment">
+        </table>
+        -->
+   </context>
+</generatorConfiguration>
