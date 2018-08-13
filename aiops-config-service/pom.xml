@@ -8,7 +8,7 @@
 	<description>微服务配置中心</description>
     <parent>
 		<groupId>com.sinosoft</groupId>
-		<artifactId>bocommlife-aiops</artifactId>
+		<artifactId>XXX-aiops</artifactId>
 		<version>2.0.0</version>
 	</parent>
 	<dependencies>
